@@ -64,13 +64,16 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div># 1- تهيئة git داخل المشروع (لو مش عاملها قبل)
-git init
-
-# 2- ربط المشروع مع الريبو على GitHub (استبدل الرابط برابط الريبو عندك)
-git remote add origin https://github.com/USERNAME/REPO_NAME.git
-
-# 3- إضافة كل الملفات للتتبع
-git add .
-
-# 4- عمل أول كوميت مع ر�
+                            </div>
+                        @endforeach
+                        <!-- End Single Product -->
+                    </div>
+                </div>
+                <div style="margin-top: 30px ; text-align: center ;   ">
+                    {{ $products->links() }}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Product Area -->
+@stop
